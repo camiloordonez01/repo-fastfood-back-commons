@@ -37,8 +37,15 @@ const columnUserUid = {
     allowNull: false,
 }
 
+const columnCompanyUid = {
+    type: DataTypes.STRING(100),
+    field: 'company_uid',
+    allowNull: false,
+}
+
 module.exports = {
     modelColumnDefault,
     columnIdDefault,
     columnUserUid,
+    columnCompanyUid,
 }
