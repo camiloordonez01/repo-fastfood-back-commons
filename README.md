@@ -6,8 +6,10 @@ Este repositorio tiene como objetivo contener las funcionalidades comunes entre 
 
 ### ⚙️ Tecnologías utilizadas
 
+-   Typescript
 -   Node js
 -   Express js
+-   Typeorm
 -   Mysql
 -   JWT
 -   Nodemon
