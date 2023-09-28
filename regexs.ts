@@ -1,6 +1,6 @@
-import { IRegexExp } from './application/common/types'
+import { RegexExp } from './application/common/types'
 
-const regex: IRegexExp = {
+const regex: RegexExp = {
     REGEX_PASSWORD: /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/,
 }
 export default regex

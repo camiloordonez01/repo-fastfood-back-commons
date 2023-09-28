@@ -1,8 +1,8 @@
 import { EntityTarget, ObjectLiteral, Repository } from 'typeorm'
 import DataBaseMysql from '../../infrastructure/database/mysql'
-import { IStorage } from './types'
+import { Storage } from './types'
 
-class StorageMysql implements IStorage {
+class StorageMysql implements Storage {
     protected database: DataBaseMysql
     protected repository: Repository<ObjectLiteral>
     constructor(entity: EntityTarget<ObjectLiteral>) {

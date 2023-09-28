@@ -1,5 +1,4 @@
-import { Response } from 'express'
-import { handleError } from './Error.handler'
+import { NextFunction, Response } from 'express'
 
 import messages from '../../messages'
 
@@ -14,9 +13,9 @@ class ResponseHandler {
     }
 }
 
-const handleResponse = (info: unknown | Error, res: Response) => {
+const handleResponse = (info: unknown, res: Response, next: NextFunction) => {
     if (info instanceof Error) {
-        handleError(info, res)
+        next(info)
     } else if (info instanceof ResponseHandler) {
         const { statusCode, result } = info
         res.status(statusCode).json({

@@ -16,7 +16,7 @@ class ErrorHandler extends Error {
     }
 }
 
-const handleError = (err: Error, res: Response): void => {
+const handleError = (err: Error | ErrorHandler, res: Response): void => {
     if (err instanceof ErrorHandler) {
         res.status(err.statusCode).json({
             status: messages.HANDLE_ERROR,

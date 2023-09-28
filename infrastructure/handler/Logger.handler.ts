@@ -1,7 +1,7 @@
 import { format, Logger, transports, createLogger, addColors } from 'winston'
 
 // Types
-import { ILoggerObject } from './types/Logger.type'
+import { LoggerObject } from './types/Logger.type'
 
 const customLevels = {
     levels: {
@@ -52,27 +52,27 @@ class LoggerHandler {
         addColors(customLevels.colors)
     }
 
-    audit(info: ILoggerObject) {
+    audit(info: LoggerObject) {
         this.logger.log(info)
     }
 
-    crit(info: ILoggerObject) {
+    crit(info: LoggerObject) {
         this.logger.crit(info)
     }
 
-    error(info: ILoggerObject) {
+    error(info: LoggerObject) {
         this.logger.error(info)
     }
 
-    warning(info: ILoggerObject) {
+    warning(info: LoggerObject) {
         this.logger.warn(info)
     }
 
-    info(info: ILoggerObject) {
+    info(info: LoggerObject) {
         this.logger.info(info)
     }
 
-    debug(info: ILoggerObject) {
+    debug(info: LoggerObject) {
         this.logger.debug(info)
     }
 }

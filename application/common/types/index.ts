@@ -1,11 +1,11 @@
-export interface IObjectLiteral {
+export interface ObjectLiteral {
     [value: string]: unknown
 }
 
-export interface IMessages {
+export interface Messages {
     [key: string]: string
 }
 
-export interface IRegexExp {
+export interface RegexExp {
     [key: string]: RegExp
 }

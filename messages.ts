@@ -1,6 +1,6 @@
-import { IMessages } from './application/common/types'
+import { Messages } from './application/common/types'
 
-const messages: IMessages = {
+const messages: Messages = {
     INTERNAL_ERROR: 'Error Interno',
     UNEXPECTED_ERROR: 'Error inesperado',
     ERROR_NOT_FOUNT: 'Not found',
