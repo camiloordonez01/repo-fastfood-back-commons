@@ -2,7 +2,7 @@ import { Column  } from 'typeorm'
 
 class Model {
     @Column({ name: 'active_row', default: '1' })
-    activeRow?: number
+    activeRow?: string
 
     @Column({ name: 'created_at' })
     createdAt?: string
@@ -11,7 +11,7 @@ class Model {
     updatedAt?: string
 
     constructor(
-        activeRow?: number,
+        activeRow?: string,
         createdAt?: string,
         updatedAt?: string,
     ) {

@@ -1,5 +1,5 @@
 class Entity {
-    activeRow?: number
+    activeRow?: string
     createdAt?: string
     updatedAt?: string
 

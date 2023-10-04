@@ -8,6 +8,7 @@ const messages: Messages = {
     UPDATE_ERROR: 'UPDATE ERROR',
     HANDLE_ERROR: 'ERROR',
     HANDLE_SUCCESS: 'SUCCESS',
+    PARAMS_ERROR:'Parámetro incorrecto'
 }
 
 export const validateLength = (field: string, minimo: number, max: number) =>

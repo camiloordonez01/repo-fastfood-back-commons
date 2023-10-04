@@ -23,7 +23,7 @@ class DataBaseMysql {
         })
     }
 
-    private async startConnection() {
+    private async startConnection(): Promise<void> {
         try {
             await this.appDataSource.initialize()
             console.log('Data Source has been initialized!')
